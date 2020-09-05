@@ -1,0 +1,79 @@
+:root {
+	--gobackarrow: 45px; /*Width of the go back arrow*/
+}
+.arrow {
+	position:absolute;
+	width: var(--gobackarrow);
+	height:auto;
+	top:12%;
+	left:2%;
+	transform: rotate(180deg);
+}
+.arrow:hover {
+	transform: scale(1.2) rotate(180deg);
+}
+h1 {
+	font-size: 55px;
+}
+.bio {
+	position:relative;
+	top:20vh;
+	width:96%;
+}
+.subbio {
+	font-size: 40px;
+}
+.readmoretext{
+	position:relative;
+	font-size:30px;
+	background:white;
+	  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+#more {
+	display:none;
+}
+.btndesign {
+	font-size: 30px;
+	background-color: white;
+	z-index:10;
+}
+.btndesign:hover {
+	background-color:black;
+	color:white;
+}
+.left {
+	position:relative;
+	width:45%;
+	float:left;
+	left:5vw;
+	height:100%;
+	animation: introtransition 1.5s;
+}
+@keyframes introtransition {
+	0% {left: -505%; opacity:0; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
+	50% {opacity:0; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
+	70%{opacity:0;}
+	99.9%{box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
+	100% {left: 5vw; opacity:1;}
+}
+
+.codebox { /*Black box around the word "coding."*/
+	background:black;
+	color:white;
+	padding:1px 3px; /*1st number is the height, 2nd number is the width*/
+}
+.right {
+	position:fixed;
+	width:50%;
+	height:100%;
+	right:0%;
+	background: black;
+}
+.bg {
+	position:fixed;
+	width:50%;
+	height:auto;
+	top:5vh;
+}

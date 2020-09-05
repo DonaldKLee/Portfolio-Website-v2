@@ -1,0 +1,795 @@
+html {
+	height:100vh;
+	width:100vw;
+}
+body {
+	background: #1b1b1b;
+	font-family:monospace;
+	margin: 0px;
+	overflow-x:hidden;
+	height:100vh;
+	width:100vw;
+	-ms-scroll-chaining: none;
+	    overscroll-behavior: none;
+}
+img { /*Prevents users from selecting images*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+		user-select: none;
+}
+body::-webkit-scrollbar { /*Scrollbar container*/
+	width: 1em;
+	background-color: lightgrey;
+}
+ 
+body::-webkit-scrollbar-track { 
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb { /*The scroll wheel*/
+background: rgb(45,45,45);
+background: linear-gradient(0deg, rgba(45,45,45,1) 10%, #0074ff 45%, rgba(45,45,45,1) 90%);
+	outline: 1px solid slategrey;
+	border-bottom-left-radius:60px;
+	border-top-left-radius:60px;
+}
+body::-webkit-scrollbar-thumb:hover { /*The scroll wheel*/
+background: #2d2d2d;
+}
+
+::-moz-selection {
+  background: black; 
+  color:white;
+}
+::selection {
+  background: black; 
+  color:white;
+}
+button { /*Removes button borders and outline*/
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	outline:none;  
+}
+.firstbackgroundcolour { /*The background colour for the top page*/
+	position:relative;
+	width:100vw;
+	top:0vh;
+	left:0vw;
+	min-height:100vh;
+	/*background: #EFEFEF;*/
+	background:#FFFFFF;
+}
+.leftsideofhome {
+	position:relative;
+	left:0%;
+	width:40%;
+	float:left;
+	top:0vh;
+}
+.centered img {
+    position:relative;
+    top:0%;
+    -webkit-transform:translateY(0%);
+        -ms-transform:translateY(0%);
+            transform:translateY(0%);
+}
+.profilepic {
+	position: relative;
+	z-index: 2;
+	width: auto; /*Width of container*/
+	height:auto;
+	top: 19vh;
+	float:left;
+	left:37.5%;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	border-radius:0;
+	-webkit-box-shadow: 0 3rem 5.5rem -1rem rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 3rem 5.5rem -1rem rgba(0, 0, 0, 0.5);
+	-webkit-animation: imagetransition 1.5s;
+	        animation: imagetransition 1.5s;
+}
+@-webkit-keyframes imagetransition{
+	from {left:-500%; opacity:0;}
+	to {left:37.5%; opacity:1;}
+}
+@keyframes imagetransition{
+	from {left:-500%; opacity:0;}
+	to {left:37.5%; opacity:1;}
+}
+h1 {
+	position:relative;
+	font-size: 70px;
+	top:1vh;
+}
+h2 {
+	font-size: 50px;
+}
+.wave {
+	display:inline-block;
+	-webkit-animation: waving 2.5s infinite;
+	        animation: waving 2.5s infinite;
+}
+@-webkit-keyframes waving {
+	0%{  -webkit-transform: rotate(5deg);  transform: rotate(5deg);}
+	25% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg);}
+	50% { -webkit-transform: rotate(5deg); transform: rotate(5deg);}
+	75% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg);}
+	100% { -webkit-transform: rotate(5deg); transform: rotate(5deg);}
+}
+@keyframes waving {
+	0%{  -webkit-transform: rotate(5deg);  transform: rotate(5deg);}
+	25% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg);}
+	50% { -webkit-transform: rotate(5deg); transform: rotate(5deg);}
+	75% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg);}
+	100% { -webkit-transform: rotate(5deg); transform: rotate(5deg);}
+}
+.bottomspacer {
+	position:relative;
+	display:none;
+	height:25vh;
+	width:100vw;
+}
+.intro { /*container*/
+	position:relative;
+	right:0%;
+	padding-right:10%;
+	float:right;
+	width:50%;
+	top:12.5vh;
+	z-index:2;
+	-webkit-animation: introtransition 1.5s;
+	        animation: introtransition 1.5s;
+	/*text-shadow: -2.5px -2.5px 0 #EFEFEF, 2.5px -2.5px 0 #EFEFEF, -2.5px 2.5px 0 #EFEFEF, 2.5px 2.5px 0 #EFEFEF;*/ /*Makes text glow the home bg colour, therefore it will NOT be hidden in featured projects*/
+	/*text-shadow: -2.5px -2.5px 0 #FFFFFF, 2.5px -2.5px 0 #FFFFFF, -2.5px 2.5px 0 #FFFFFF, 2.5px 2.5px 0 #FFFFFF;*/
+}
+@-webkit-keyframes introtransition {
+	0% {opacity:0;}
+	50% {opacity:0;}
+	100% {opacity:1;}
+}
+@keyframes introtransition {
+	0% {opacity:0;}
+	50% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.oval { /*Contact me Button*/
+	position:absolute;
+	text-align: center;
+	font-size: 35px;
+	background-color:#162129;
+	width: 240px;
+	top:100%;
+	left:0%;
+	height: 55px;
+	line-height:55px;
+	border-radius: 40px;
+	text-shadow: none;
+	-webkit-animation: CMButton 1.5s infinite alternate;
+	animation: CMButton 1.5s infinite alternate;
+}
+@-webkit-keyframes CMButton {
+  from {
+    -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #0000FF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+            box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #0000FF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+  }
+  to {
+	  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #4169E1, 0 0 15px #FFFFFF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+	          box-shadow: 0 0 5px #FFFFFF, 0 0 10px #4169E1, 0 0 15px #FFFFFF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+  }
+}
+@keyframes CMButton {
+  from {
+    -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #0000FF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+            box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #0000FF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+  }
+  to {
+	  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #4169E1, 0 0 15px #FFFFFF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+	          box-shadow: 0 0 5px #FFFFFF, 0 0 10px #4169E1, 0 0 15px #FFFFFF, 0 0 20px #4169E1, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 25px #4169E1;
+  }
+}
+.cm { /*Contact me text styles*/
+	color:white; 
+	text-decoration: none;
+} 
+.cm:hover {
+	color:white;
+	font-weight:bold;
+}
+.oval:hover .iwb{ /*Makes the tooltip text visible when Let's Chat is hovered*/
+  visibility: visible;
+}
+.oval:hover{
+	position: absolute;
+	background-image: url("others/Lightning1.jpg");
+	opacity:0.51;
+	background-color:white;
+	content:"";
+	background-size:cover;
+	opacity: 1;
+	border-radius: 40px;
+	-webkit-animation: contactme 0.1s infinite alternate;
+	        animation: contactme 0.1s infinite alternate;
+}
+@-webkit-keyframes contactme {
+  from {
+    -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #FFFFFF, 0 0 30px #4169E1, 0 0 30px #4169E1;
+            box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #FFFFFF, 0 0 30px #4169E1, 0 0 30px #4169E1;
+  }
+  
+  to {
+	  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 30px #4169E1;
+	          box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 30px #4169E1;
+  }
+}
+@keyframes contactme {
+  from {
+    -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #FFFFFF, 0 0 30px #4169E1, 0 0 30px #4169E1;
+            box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #FFFFFF, 0 0 30px #4169E1, 0 0 30px #4169E1;
+  }
+  
+  to {
+	  -webkit-box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 30px #4169E1;
+	          box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #4169E1, 0 0 30px #4169E1, 0 0 30px #4169E1;
+  }
+}
+.iwb {
+	position: absolute;
+	visibility: hidden;
+	width:10%;
+	height:auto;
+	right:24vw;
+	bottom: 520px;
+	z-index: 5;
+}
+.Bubble {
+	position:absolute;
+}
+.Text {
+	position:absolute;
+	color: black;
+	text-align: center;
+	font-size:40px;
+	padding: 20px 60px;
+	line-height:40px;
+}
+/*lines*/
+/*Top Lines*/
+.line {
+	position:absolute;
+	background-color: black;
+	border-radius:200px;
+	-webkit-transform: rotate(-50deg);
+	    -ms-transform: rotate(-50deg);
+	        transform: rotate(-50deg);
+	overflow-x:hidden;
+}
+.line:nth-child(1) { /*Top Line*/
+	height: 134%;
+	top: -40vh;
+	left:13%;
+	width:10px;
+	-webkit-animation: line1 2s infinite;
+	        animation: line1 2s infinite;
+}
+.line:nth-child(2) {
+	height: 42.5%;
+	top: 5vh;
+	left:6%;
+	width:10px;
+	-webkit-animation: line1 0.75s infinite;
+	        animation: line1 0.75s infinite;
+}
+.line:nth-child(3) {
+	height: 65%;
+	top: 12vh;
+	left:8%;
+	width:10px;
+	-webkit-animation: line1 1s infinite;
+	        animation: line1 1s infinite;
+}
+.line:nth-child(4) {
+		height: 62%;
+		top: 30vh;
+		left:10%;
+		width:10px;
+		-webkit-animation: line1 1s infinite;
+		        animation: line1 1s infinite;
+}
+.line:nth-child(5) {
+		height: 80%;
+		top: 30vh;
+		left:7%;
+		width:10px;
+		-webkit-animation: line1 1s infinite;
+		        animation: line1 1s infinite;
+}
+.line:nth-child(6) {
+		height: 39%;
+		top: 60vh;
+		left:3%;
+		width:10px;
+		-webkit-animation: line1 0.5s infinite;
+		        animation: line1 0.5s infinite;
+}
+@-webkit-keyframes line1 {
+	from {background: rgb(0,117,255); background: linear-gradient(-50deg, rgba(0,117,255,1) 0%, rgba(2,0,87,1) 50%, rgba(0,0,0,1) 100%);}
+
+	to {background: rgb(0,117,255); background: -webkit-gradient(linear, right top, left top, from(rgba(0,117,255,1)), color-stop(50%, rgba(2,0,87,1)), to(rgba(0,0,0,1))); background: linear-gradient(270deg, rgba(0,117,255,1) 0%, rgba(2,0,87,1) 50%, rgba(0,0,0,1) 100%);}
+}
+@keyframes line1 {
+	from {background: rgb(0,117,255); background: -o-linear-gradient(140deg, rgba(0,117,255,1) 0%, rgba(2,0,87,1) 50%, rgba(0,0,0,1) 100%); background: linear-gradient(-50deg, rgba(0,117,255,1) 0%, rgba(2,0,87,1) 50%, rgba(0,0,0,1) 100%);}
+
+	to {background: rgb(0,117,255); background: -o-linear-gradient(right, rgba(0,117,255,1) 0%, rgba(2,0,87,1) 50%, rgba(0,0,0,1) 100%); background: -webkit-gradient(linear, right top, left top, from(rgba(0,117,255,1)), color-stop(50%, rgba(2,0,87,1)), to(rgba(0,0,0,1))); background: linear-gradient(270deg, rgba(0,117,255,1) 0%, rgba(2,0,87,1) 50%, rgba(0,0,0,1) 100%);}
+}
+/*////////////////////////////////////////////////////Bottom page\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.bottom {
+	position:relative;
+	min-height:100%;
+	width:100%;
+	background:#1b1b1b;
+	z-index:-3;
+}
+.Cave_art {
+	position:absolute;
+	width:56vw;
+	height:15vh;
+	top:-2vh; /*Higher number = Cave art goes higher*/
+	z-index:-1;
+}
+.Cave_art:nth-child(1) {
+	display:visible;
+	left:-1%;
+}
+.Cave_art:nth-child(2) {
+	display:visible;
+	left:45%;
+	/*Flips the image*/
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	    transform: scaleX(-1);
+}
+.featured {
+	position:relative;
+	width:80%;
+	top:8vh;
+	left:10vw;
+	height:10%;
+}
+.fptitle { 
+	position:absolute;
+	color:white;
+	font-size:60px;
+	font-weight:bold;
+	/*Centers Text*/
+	left:0%;
+	width:100%;
+	text-align:center;
+	/*Centers Text ^^^*/
+	text-shadow: 0 0 20px #000000; 
+}
+.swirlcontain {
+	position:relative;
+	top:0vh;
+	left:-1vw;
+	z-index:-2;
+}
+.credit2 { /*For smaller devices, not fixed*/
+	display:none;
+}
+.swirl {
+	width:101vw;
+}
+/*****************************		START OF SHOWCASE BOXES CSS		**********************************/
+.showcasecontainer {
+	top:13vh;
+	position:relative;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto auto auto;
+	grid-template-columns: auto auto auto;
+	padding: 2% 17.5%;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.rounded-box {
+  position: relative;
+  height: 250px;
+  width: 400px;
+  margin: 2% 1%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+  border-radius: 50px;
+  background: black;
+}
+.rounded-box:hover {
+	cursor: pointer;
+	bottom: 1vh;
+}
+/*************Project Title*****************/
+.projectheading {
+	position:absolute;
+	top:20%;
+	font-size:50px;
+	width:100%;
+	color:white;
+	text-align:center;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease; /*Occurs when hover is off*/ 
+}
+.rounded-box:hover .projectheading { /*Whenever a box is hovered, the title disappears*/
+	visibility: hidden;
+	-webkit-animation: FadeUp 0.8s 1;
+	        animation: FadeUp 0.8s 1;
+	top:-50%;
+}
+@-webkit-keyframes FadeUp {
+0% {visibility: visible; top:20%;}
+25% {visibility: visible; top:20%;}
+50% {visibility: visible; opacity: 0.7;} 
+75% {visibility: hidden; opacity:0;}
+100% {font-size:55px; top:-100%; opacity: 0;}
+}
+@keyframes FadeUp {
+0% {visibility: visible; top:20%;}
+25% {visibility: visible; top:20%;}
+50% {visibility: visible; opacity: 0.7;} 
+75% {visibility: hidden; opacity:0;}
+100% {font-size:55px; top:-100%; opacity: 0;}
+}
+/***********************END********************************/
+
+/**************************Description********************/
+.des {
+	visibility: hidden;
+	position:absolute;
+	font-size: 30px;
+	color:white;
+	top:35%;
+	text-align:center;
+	width:100%;
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out; 
+	opacity:0;
+}
+.fillerdes {
+	margin-top: 40px;
+}
+.rounded-box:hover .des { /*Whenever a box is hovered, their description appears*/
+	visibility: visible;
+	-webkit-animation: SlideUp 1s 1;
+	        animation: SlideUp 1s 1;
+	top:15%;
+	opacity:100;
+}
+.rounded-box:hover {
+	-webkit-animation: showcasehover 999s 1 alternate;
+	        animation: showcasehover 999s 1 alternate;
+}
+@-webkit-keyframes SlideUp { /*Description*/
+0% {top:45%; visibility:hidden;}
+25% {visibility: hidden;}
+50% {visibility: visible;}
+75% {opacity:100; visibility: visible;}
+100% {opacity:100; top:15%; visibility: visible;}
+}
+@keyframes SlideUp { /*Description*/
+0% {top:45%; visibility:hidden;}
+25% {visibility: hidden;}
+50% {visibility: visible;}
+75% {opacity:100; visibility: visible;}
+100% {opacity:100; top:15%; visibility: visible;}
+}
+/************************END*****************************/
+@-webkit-keyframes showcasehover {
+  from {
+	    -webkit-box-shadow: 0 0 0px #fff, 0 0 0px #FFFFFF, 0 0 15px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 20px #FFFFFF, 0 0 20px #FFFFFF;
+	            box-shadow: 0 0 0px #fff, 0 0 0px #FFFFFF, 0 0 15px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 20px #FFFFFF, 0 0 20px #FFFFFF;
+  }
+  
+  to {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #000000, 0 0 25px #FFFFFF, 0 0 30px #000000, 0 0 30px #FFFFFF;
+            box-shadow: 0 0 5px #fff, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #000000, 0 0 25px #FFFFFF, 0 0 30px #000000, 0 0 30px #FFFFFF;
+  }
+}
+@keyframes showcasehover {
+  from {
+	    -webkit-box-shadow: 0 0 0px #fff, 0 0 0px #FFFFFF, 0 0 15px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 20px #FFFFFF, 0 0 20px #FFFFFF;
+	            box-shadow: 0 0 0px #fff, 0 0 0px #FFFFFF, 0 0 15px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 20px #FFFFFF, 0 0 20px #FFFFFF;
+  }
+  
+  to {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #000000, 0 0 25px #FFFFFF, 0 0 30px #000000, 0 0 30px #FFFFFF;
+            box-shadow: 0 0 5px #fff, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #000000, 0 0 25px #FFFFFF, 0 0 30px #000000, 0 0 30px #FFFFFF;
+  }
+}
+.CP4U {
+	background: -o-linear-gradient(rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.2)) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/logo.png");
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.5)), to(rgba(24, 24, 24, 0.2))) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/logo.png");
+	background: -o-linear-gradient(rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.2)) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/logo.png");
+	background: linear-gradient(rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.2)) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/logo.png");
+	background-size: 400px auto;
+}
+.CarePackages4Udes { /*Editing this won't affect things, edit the one in resonsivehome.css*/
+	font-size: 30px;
+	margin-top: 10px;
+}
+.mylinksimage {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.5)), to(rgba(24, 24, 24, 0.2))) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/Linkhubimg.png");
+	background: -o-linear-gradient(rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.2)) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/Linkhubimg.png");
+	background: linear-gradient(rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.2)) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/Linkhubimg.png");
+	background-size: 500px auto;
+}
+.linkhubdes {
+	font-size:20px;
+}
+.studyhawkdesimage {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.5)), to(rgba(24, 24, 24, 0.2))) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/StudyHawkimg.png");
+	background: -o-linear-gradient(rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.2)) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/StudyHawkimg.png");
+	background: linear-gradient(rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.2)) /*Forth Number in rgba is the opacity*/,url("FeaturedProjectsIMG/StudyHawkimg.png");
+	background-size: 100% 100%;
+}
+.studyhawkdes {
+	font-size:19px;
+	margin-top:5px;
+}
+.rounded-box:nth-child(3) {
+	background:#2160FC;
+}
+.rounded-box:nth-child(4) {
+	background:#17C81F;;
+}
+/*****************************		END OF SHOWCASE BOXES CSS		**********************************/
+/*---------------------------------------------Modal--------------------------------------------------*/
+/*Modal container*/
+.modalanimation {-webkit-animation: modalanimation 1.4s 1;animation: modalanimation 1.4s 1;}
+@-webkit-keyframes modalanimation {
+	from {
+		left:-100vw;
+	}
+	to {
+		left:0vw;
+	}
+}
+@keyframes modalanimation {
+	from {
+		left:-100vw;
+	}
+	to {
+		left:0vw;
+	}
+}
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height:100%; 
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	z-index:100;
+}
+/*The Actual Model*/
+.modal-content {
+	position:relative;
+	background-color: #fefefe;
+	margin: 2.5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	padding-bottom:0%; /*Adds some borders to the last element, so the modal looks more modern*/
+	border: 1px solid #888;
+	width: 80%; 
+	min-height:125vh;
+	border-radius:40px;
+}
+/* The Close Button */
+.close {
+	position:relative;
+	color: #aaaaaa;
+	float: right;
+	right:0.5%;
+	font-size: 35px;
+	top:0%;
+	font-weight: bold;
+}
+.close:hover,.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.PT { /*Project Title*/
+	position:relative;
+	left:1%;
+	font-weight:bold;
+	font-size: 70px;
+	top:-1vh;
+	margin-bottom:-1vh;
+} 
+.modalsubheadings {
+	position:relative;
+	left:1%;
+	font-size: 38px;
+	font-weight:bold;
+}
+.modallink {
+	color:blue;
+	font-weight:bold;
+}
+/* mouse over link */
+.modallink:hover {
+	text-decoration:none;
+	color: DodgerBlue;
+}
+.modal1text {
+	position:relative;
+	left:1%;
+	font-size:30px;
+	top:-2%;
+}
+
+.modalleft {
+	float: left;
+	width:37.5vw;
+	/*background-color:lightblue;*/ /*Uncomment to see the container size*/
+}
+.fence {
+	position:absolute;
+	width:3px;
+	height:105vh;
+	left:40vw;
+	top:15vh;
+	background-color:black;
+}
+.modalright {
+	position:relative;
+	float: right;
+	width: 0px;
+	right:35vw;
+	top:10vh;
+}
+.videointrotext {
+	position:relative;
+	width:400px;
+	padding-top:-1vh;
+	font-weight:bold;
+	font-size: 50px;
+}
+.productvideo {
+	position:relative;
+	width:30vw;
+	height:40vh;
+	top:0vh;
+}
+.fom { /*Find out more box, NOW TO "Our Presentation"*/
+	background: -o-linear-gradient(top left, #3399ff 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right bottom, from(#3399ff), to(#000000));
+	background: linear-gradient(to bottom right, #3399ff 0%, #000000 100%);
+	color:white;
+	border-radius:40px;
+	width:300px;
+	height:50px;
+	line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+	font-size:30px;
+	text-decoration:none;
+	text-align:center;
+	-webkit-animation: fomani 2s infinite alternate;
+	        animation: fomani 2s infinite alternate;
+}
+@-webkit-keyframes fomani {
+  from {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+            box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+  }
+  
+  to {}
+}
+@keyframes fomani {
+  from {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+            box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+  }
+  
+  to {}
+}
+.fom:hover {
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+	background:white;
+	color:black;
+	font-weight:bold;
+	-webkit-animation: fomanihover 2s infinite alternate;
+	        animation: fomanihover 2s infinite alternate;
+}
+@-webkit-keyframes fomanihover {
+  from {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+            box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+  }
+  
+  to {
+	  -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+	          box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+  }
+}
+@keyframes fomanihover {
+  from {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+            box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+  }
+  
+  to {
+	  -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+	          box-shadow: 0 0 5px #fff, 0 0 10px #33ccff, 0 0 15px #33ccff, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #33ccff, 0 0 30px #33ccff;
+  }
+}
+.vog {
+	background-color:black;
+	color:white;
+	border-radius:40px;
+	width:280px;
+	height:50px;
+	line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+	font-size:30px;
+	text-decoration:none;
+	text-align:center;
+	-webkit-animation: vogani 2s infinite alternate;
+	animation: vogani 2s infinite alternate;
+}
+@-webkit-keyframes vogani {
+  from {}
+  
+  to {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+            box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+  }
+}
+@keyframes vogani {
+  from {}
+  
+  to {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+            box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+  }
+}
+.vog:hover {
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+	color:black;
+	background-color:white;
+	font-weight:bold;
+	-webkit-animation: voganihover 2s infinite alternate;
+	        animation: voganihover 2s infinite alternate;
+}
+@-webkit-keyframes voganihover {
+  from {
+	    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+	            box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+  }
+  
+  to {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+            box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+  }
+}
+@keyframes voganihover {
+  from {
+	    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+	            box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+  }
+  
+  to {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+            box-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 30px #000000;
+  }
+}
+/*---------------------------------------------Modal END--------------------------------------------------*/
+/*////////////////////////////////////End ^^^\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/

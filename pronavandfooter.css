@@ -1,0 +1,194 @@
+:root {
+--navbarheight: 14px;
+--navbarrightpadding: var(--navbarheight) 16px;
+}
+/*Navigation Bar*/
+ul.navigationlist {
+	position:fixed;
+	overflow: hidden;
+	list-style-type:none; /*removes the point beside each word*/
+	background-color: #FFFBFB;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	margin:0px; /*Otherwise there'll be a space above the nav bar*/
+	z-index:99;
+}
+li a.navtabsleft {
+	position:relative;
+	font-size: 30px;
+	float:left;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarheight) 5px;
+	display:inline;
+	text-align:center;
+}
+.logo {
+	width: 40px;
+	height:auto;'
+}
+.logo:hover {
+	animation: spin 0.5s infinite;
+}
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	25%{transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(270deg);}
+	100% {transform: rotate(360deg);}
+}
+.nameRGB {	
+	position:relative;
+	font-size: 30px;
+	float:left;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarheight) 5px;
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+}
+.nameRGB:hover {
+	animation: nameRGB 0.7s infinite;
+}
+@keyframes nameRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #0066ff, 0 0 15px #0000ff, 0 0 20px #2F4F4F, 0 0 25px #2F4F4F, 0 0 30px #6495ED, 0 0 30px #6495ED;
+  }
+}
+
+/*About Me*/
+.abanimation {
+	animation: aboutme 3s infinite;
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarrightpadding);
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+	
+}
+.abanimation:hover {
+	animation: abRGB 0.7s infinite, aboutme 3s infinite;
+}
+@keyframes abRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #FF8C00, 0 0 15px #FF8C00, 0 0 20px #2F4F4F, 0 0 25px #FF8C00, 0 0 30px #FF8C00, 0 0 30px #FF8C00;
+  }
+}
+@keyframes aboutme {
+	0% {transform: rotate(0deg);}
+	8.3%{transform: rotate(8deg);}
+	16.7% {transform: rotate(0deg);}
+	25% {transform: rotate(8deg);}
+	33.33% {transform: rotate(0deg);}
+}
+/*About me End*/
+/*Projects*/
+.proanimation {
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarrightpadding);
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+	animation: proRGB 0.9s infinite alternate;
+}
+@keyframes proRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #FFD700, 0 0 15px #ADFF2F, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #8A2BE2, 0 0 30px #8A2BE2;
+  }
+}
+/*Projects End*/
+.resumeanimation {
+	animation: resume 3s infinite;
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarrightpadding);
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+}
+.resumeanimation:hover {
+	animation: resumeRGB 0.7s infinite, aboutme 3s infinite;
+}
+@keyframes resumeRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #1E90FF, 0 0 15px #483D8B, 0 0 20px #1E90FF, 0 0 25px #000099, 0 0 30px #5F9EA0, 0 0 30px #5F9EA0;
+  }
+}
+@keyframes resume {
+	0% {transform: rotate(0deg);}
+	75%{transform: rotate(0deg);}
+	83.33% {transform: rotate(8deg);}
+	91.7% {transform: rotate(0deg);}
+	100% {transform: rotate(8deg);}
+}
+/*End*/
+/*Footer*/
+.credit {
+	position:absolute;
+	bottom:0%;
+	font-size:15px;
+	z-index:2;
+	left:1%;
+}
+.cto { /*Check These Out!*/
+	position:absolute;
+	bottom:2.5%;
+	right:0vw;
+	font-size: 30px;
+	float:right;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+	animation: ctorotate 4s infinite;
+}
+@keyframes ctorotate {
+	0% {transform: rotate(0deg);}
+	66.7% {transform: rotate(0deg);}
+	75%{transform: rotate(8deg);}
+	83.33% {transform: rotate(0deg);}
+	91.7% {transform: rotate(8deg);}
+	100% {transform: rotate(0deg);}
+}
+ul.socialmedia {
+	position:absolute;
+	overflow: hidden;
+	list-style-type:none; /*removes the point beside each word*/
+	width: 100%;
+	bottom:0%;
+	margin:0px; /*Otherwise there'll be a space above the nav bar*/
+}
+li a.icons {
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: 13px 16px;
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+}
+/*End*/

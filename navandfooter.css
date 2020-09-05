@@ -1,0 +1,508 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root {
+--navbarheight: 14px;
+--navbarrightpadding: var(--navbarheight) 16px;
+}
+.bold {font-weight:bold;}
+.rnavbutton { /*the menu button*/
+			display:none;
+}
+.rnavbuttonon { /*the menu button*/
+			display:none;
+}
+.lefttabmiddle {
+	left:0vw;
+}
+/*Navigation Bar*/
+ul.navigationlist {
+	position:fixed;
+	overflow-x:hidden;
+	list-style-type:none; /*removes the point beside each word*/
+	background-color: #FFFBFB;
+	-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 100vw;
+	margin:0px; /*Otherwise there'll be a space above the nav bar*/
+	z-index:99;
+}
+li a.navtabsleft {
+	position:relative;
+	font-size: 30px; /*Doesn't do anything, go to nameRGB*/
+	float:left;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarheight) 5px;
+	display:inline;
+	text-align:center;
+}
+.logo {
+	width: 40px;
+	height:auto;
+}
+.logo:hover {
+	-webkit-animation: spin 0.5s infinite;
+	        animation: spin 0.5s infinite;
+}
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	25%{-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+	50% {-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+	75% {-webkit-transform: rotate(270deg);transform: rotate(270deg);}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes spin {
+	0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	25%{-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+	50% {-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+	75% {-webkit-transform: rotate(270deg);transform: rotate(270deg);}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+.nameRGB {	
+	position:relative;
+	font-size: 30px;
+	float:left;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarheight) 5px;
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+}
+.nameRGB:hover {
+	-webkit-animation: nameRGB 0.7s infinite;
+	        animation: nameRGB 0.7s infinite;
+}
+@-webkit-keyframes nameRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #0066ff, 0 0 15px #0000ff, 0 0 20px #2F4F4F, 0 0 25px #2F4F4F, 0 0 30px #6495ED, 0 0 30px #6495ED;
+  }
+}
+@keyframes nameRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #0066ff, 0 0 15px #0000ff, 0 0 20px #2F4F4F, 0 0 25px #2F4F4F, 0 0 30px #6495ED, 0 0 30px #6495ED;
+  }
+}
+/*About Me*/
+.abanimation {
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarrightpadding);
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;	
+}
+.abanimation:hover {
+	-webkit-animation: abRGB 0.7s infinite;
+	        animation: abRGB 0.7s infinite;
+}
+@-webkit-keyframes abRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #FF8C00, 0 0 15px #FF8C00, 0 0 20px #2F4F4F, 0 0 25px #FF8C00, 0 0 30px #FF8C00, 0 0 30px #FF8C00;
+  }
+}
+@keyframes abRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #FF8C00, 0 0 15px #FF8C00, 0 0 20px #2F4F4F, 0 0 25px #FF8C00, 0 0 30px #FF8C00, 0 0 30px #FF8C00;
+  }
+}
+/*About me End*/
+/*Projects*/
+.proanimation {
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarrightpadding);
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+}
+.proanimation:hover {
+	-webkit-animation: proRGB 0.7s infinite;
+	        animation: proRGB 0.7s infinite;
+}
+@-webkit-keyframes proRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #FFD700, 0 0 15px #ADFF2F, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #8A2BE2, 0 0 30px #8A2BE2;
+  }
+}
+@keyframes proRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #FFD700, 0 0 15px #ADFF2F, 0 0 20px #8A2BE2, 0 0 25px #8A2BE2, 0 0 30px #8A2BE2, 0 0 30px #8A2BE2;
+  }
+}
+/*Projects End*/
+.resumeanimation {
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: var(--navbarrightpadding);
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+}
+.resumeanimation:hover {
+	-webkit-animation: resumeRGB 0.7s infinite;
+	        animation: resumeRGB 0.7s infinite;
+}
+@-webkit-keyframes resumeRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #1E90FF, 0 0 15px #483D8B, 0 0 20px #1E90FF, 0 0 25px #000099, 0 0 30px #5F9EA0, 0 0 30px #5F9EA0;
+  }
+}
+@keyframes resumeRGB {
+  from {}
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #1E90FF, 0 0 15px #483D8B, 0 0 20px #1E90FF, 0 0 25px #000099, 0 0 30px #5F9EA0, 0 0 30px #5F9EA0;
+  }
+}
+/*End*/
+
+	@media screen and (max-width: 800px) { /*Makes tabs disappear on smaller devices*/
+		:root {
+		--navbarheight: 10px;
+		--navbarrightpadding: var(--navbarheight) 16px;
+		
+		--rnavbuttonwidth: 24px;
+		--rnavbuttonheight: auto;
+		--rnavbuttonleft: -1vw;
+		}
+		.ntr { /*nav tabs right*/
+			display: none; 
+		}
+		#TheResponsiveNavBar {
+	
+		}
+		/* The Modal (background) */
+		.TheResponsiveNavBarbackground {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 97; /* Sit on top */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  overflow: auto; /* Enable scroll if needed */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		.TRNBContainer {
+			position:fixed;
+			left:-100vw; /*Will go back here when navbar closes*/
+			background-color:#1c1c1c;
+			width:85vw;
+			height:101vh;
+			z-index:98;
+			top:0;	
+			-webkit-transition: all 2s ease;
+			-o-transition: all 1.5s ease;
+			transition: all 1.5s ease; /*Occurs when hover is off*/ 
+		}
+		.rnavanimation { /*Is added to id addsnavani when bar is pressed*/
+			-webkit-animation: navslide 1.5s 1;
+			        animation: navslide 1.5s 1;
+			left:-1vw;
+		}
+		.responsivetabs { /*the tabs in the responsive container*/
+			position:absolute;
+			display:inline;
+			text-align:center;
+			text-decoration:none;
+			top:18vh;
+			left:1vw; /*Center*/
+			padding-top:10vh;
+			color:white;
+			font-size: 30px;		
+		}
+		/*About Me*/
+		
+		.abanimation {
+			-webkit-animation: aboutme 3s infinite;
+			        animation: aboutme 3s infinite;
+			top:5vh;
+		}
+		.proanimation {
+			-webkit-animation: projects 3s infinite;
+			        animation: projects 3s infinite;
+			top:12vh;
+		}
+		.resumeanimation {
+			-webkit-animation: resume 3s infinite;
+			        animation: resume 3s infinite;
+			top:19vh;
+		}
+
+		@-webkit-keyframes navslide {
+			from {
+				left:-100vw;
+			}
+			to {
+				left:-1vw;
+			}
+		}
+		@keyframes navslide {
+			from {
+				left:-100vw;
+			}
+			to {
+				left:-1vw;
+			}
+		}
+		.rnavbutton { /*the menu button*/
+			position:relative;
+			display:inline;
+			width:var(--rnavbuttonwidth);
+			padding: 0 5px;
+			top:12px;
+			height:var(--rnavbuttonheight);
+			left:var(--rnavbuttonleft);
+			float:left;
+			-webkit-transition: 0.25s ease;
+			-o-transition: 0.25s ease;
+			transition: 0.25s ease;
+		}
+		.rnavbuttonon {
+			position:relative;
+			display:none;
+			width:var(--rnavbuttonwidth);
+			padding: var(--navbarheight) 5px;
+			height:var(--rnavbuttonheight);
+			top:1vh;
+			-webkit-transform:rotate(90deg);
+			    -ms-transform:rotate(90deg);
+			        transform:rotate(90deg);
+			left:var(--rnavbuttonleft);
+			float:left;
+			-webkit-transition: 0.25s ease;
+			-o-transition: 0.25s ease;
+			transition: 0.25s ease;
+		}
+		.rnavbutton:hover {
+			-webkit-animation: hamspin 0.25s 1;
+			        animation: hamspin 0.25s 1;
+			-webkit-transform:rotate(45deg);
+			    -ms-transform:rotate(45deg);
+			        transform:rotate(45deg);
+		}
+		@-webkit-keyframes hamspin {
+			from {
+				-webkit-transform:rotate(0deg);
+				        transform:rotate(0deg);
+			}
+			
+			to {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+		}
+		@keyframes hamspin {
+			from {
+				-webkit-transform:rotate(0deg);
+				        transform:rotate(0deg);
+			}
+			
+			to {-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+		}
+		#randomfactstexton {
+			width:30px;
+			height:30px;
+			left:2vw;
+		}
+		.rnavbuttonon:hover {
+			-webkit-animation: hamspinreverse 0.25s 1;
+			        animation: hamspinreverse 0.25s 1;
+			-webkit-transform:rotate(0deg);
+			    -ms-transform:rotate(0deg);
+			        transform:rotate(0deg);
+		}
+		@-webkit-keyframes hamspinreverse {
+			from {
+				-webkit-transform:rotate(90deg);
+				        transform:rotate(90deg);
+			}
+			
+			to {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+		}
+		@keyframes hamspinreverse {
+			from {
+				-webkit-transform:rotate(90deg);
+				        transform:rotate(90deg);
+			}
+			
+			to {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+		}
+		.lefttabmiddle {
+			position:relative;
+			left:5vw;
+		}
+		/*Responsive ^^^*/	
+	}
+	
+/*Footer*/
+.footerbox {
+	position:fixed;
+	background-color:white;
+	bottom:0%;
+	z-index:20;
+}
+.footerbox:nth-child(1) {
+	width:10vw;
+	height:5vh;
+	left:0%;
+	border-top-right-radius: 40px;
+}
+.credit {
+	position:relative;
+	font-size:15px;
+	left:10%;
+	line-height:3vh;
+	z-index:999;
+	text-shadow: 0 0 20px #EFEFEF; /*Makes text glow the home bg colour, therefore it will NOT be hidden in featured projects*/
+}
+.footerbox:nth-child(2) {
+	width: 310px;
+	height:95px;
+	right:0vw;
+	border-top-left-radius: 50px;
+}
+.cto { /*Check These Out!*/
+	position:absolute;
+	bottom:20%;
+	right:0.5vw;
+	font-size: 30px;
+	float:right;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+	text-shadow: 0 0 3px #EFEFEF; /*Makes text glow the home bg colour, therefore it will NOT be hidden in featured projects*/
+	z-index: 99;
+}
+.fixedfooterlogo {
+	position:fixed;
+	bottom:1%;
+	height:35px;
+	width:auto;
+}
+.fixedfooterlogo.l {
+	right:190px;
+}
+.fixedfooterlogo.g {
+	right:120px;
+}
+.fixedfooterlogo.i {
+	right:50px;
+}
+ul.socialmedia {
+	position:absolute;
+	overflow:visible;
+	z-index: 20;
+	list-style-type:none; /*removes the point beside each word*/
+	width: 100%;
+	bottom:0%;
+	margin:0px; /*Otherwise there'll be a space above the nav bar*/
+}
+li a.icons {
+	position:relative;
+	right:3.5vw;
+	font-size: 30px;
+	float:right;
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+	padding: 13px 16px;
+	display:inline;
+	color:black;
+	text-align:center;
+	text-decoration:none;
+}
+.linkedin:hover .linkedinhover {
+	visibility:visible;
+}
+.linkedinhover {
+	position: absolute;
+	visibility: hidden;
+	height:auto;
+	left:26vw;
+	bottom:82vh;
+	z-index: 5;
+}
+.linkedinchat {
+	position:absolute;
+}
+.linkedintext {
+	position:absolute;
+	color: black;
+	text-align:center;
+	width:165px;
+	font-size:30px;
+	padding: 50px 42px;
+}
+.github:hover .githubhover {
+	visibility:visible;
+}
+.githubhover {
+	position: absolute;
+	visibility: hidden;
+	height:auto;
+	left:26vw;
+	bottom:82vh;
+	z-index: 5;
+}
+.githubchat {
+	position:absolute;
+}
+.githubtext {
+	position:absolute;
+	color: black;
+	text-align:center;
+	width:170px;
+	font-size:30px;
+	padding: 25px 50px;
+}
+.instagram:hover .instagramhover {
+	visibility:visible;
+}
+.instagramhover {
+	position: absolute;
+	visibility: hidden;
+	height:auto;
+	left:26vw;
+	bottom:82vh;
+	z-index: 5;
+}
+.instagramchat {
+	position:absolute;
+}
+.instagramtext {
+	position:absolute;
+	color: black;
+	text-align:center;
+	width:200px;
+	font-size:27.5px;
+	padding: 35px 50px;
+}
+/*End*/

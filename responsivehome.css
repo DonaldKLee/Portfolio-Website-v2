@@ -1,0 +1,2101 @@
+@media only screen and (max-width: 8000px) { /*3000 or lower*/
+/*SUPER HUGE SCREENS*/
+:root {
+	--navbarheight: 24px;
+	--navbarrightpadding: var(--navbarheight) 16px;
+	}
+	.logo {
+		width: 50px;
+		height:auto;
+	}
+	li a.navtabsleft {
+		/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+		padding: var(--navbarheight) 5px;
+	}
+	.nameRGB {	
+		font-size: 40px;
+		padding: var(--navbarheight) 7px;
+		display:inline;
+	}
+	.abanimation {
+		right:3.5vw;
+		font-size: 40px;	
+	}
+	.proanimation {
+		right:3.5vw;
+		font-size: 40px;
+	}
+	.resumeanimation {
+		right:3.5vw;
+		font-size: 40px;
+	}
+	.profilepic {
+		width:auto;
+		height:auto;
+		top: 18vh;
+		float:left;
+		left:37.5%;
+	}
+	.picsize {
+		width:20vw;
+		height:auto;
+	}
+	h1 {
+		position:relative;
+		font-size: 85px;
+		top:1vh;
+	}
+	h2 {
+		font-size: 70px;
+	}
+	.oval { /*Contact me Button*/
+		font-size: 40px;
+		width: 280px;
+		height: 75px;
+		line-height:75px;
+	}
+	.footerbox:nth-child(1) {
+		width:13vw;
+		height:5vh;
+	}
+	.credit {
+		font-size:25px;
+		left:10%;
+		bottom:1vh;
+		line-height:3vh;
+	}
+	.swirlcontain {
+		position:relative;
+		top:5vh;
+		left:-1vw;
+		z-index:1;
+	}
+	.fptitle { 
+		font-size:80px;
+	}
+	.showcasecontainer {
+		padding: 2% 16%;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		margin: 3% 5%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		height: 320px;
+		width: 500px;
+	}
+	.projectheading {
+		position:absolute;
+		top:20%;
+		font-size:60px;
+	}
+	.fillerdes {
+		font-size: 35px;
+	}
+	.linkhubdes {
+		font-size:20px;
+	}
+	.CP4U {
+		background-size: 500px auto;
+	}
+	.CarePackages4Udes { /*Editing this won't affect things, edit the one in resonsivehome.css*/
+		font-size: 30px;
+		margin-top: 10px;
+	}	
+	/* The Close Button */
+	.close {
+		position:relative;
+		color: #aaaaaa;
+		float: right;
+		right:0.5%;
+		font-size: 40px;
+		top:0%;
+		font-weight: bold;
+	}
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		font-size: 68px;
+	} 
+	.modal-content {
+		margin: 2.5% auto; /* 15% from the top and centered */
+		padding: 20px;
+		padding-bottom:5%; /*Adds some borders to the last element, so the modal looks more modern*/
+		border: 1px solid #888;
+		width: 80%; 
+		min-height:125vh;
+		border-radius:40px;
+	}
+	.fence {
+		width:3px;
+		height:115vh;
+		left:40vw;
+		top:15vh;
+		background-color:black;
+	}
+	.modalsubheadings {
+		position:relative;
+		left:1%;
+		font-size: 46px;
+		font-weight:bold;
+	}
+	.modal1text {
+		position:relative;
+		left:1%;
+		font-size:40px;
+		top:-2%;
+	}
+	.modalright {
+		width: 0px;
+		right:35vw;
+		top:10vh;
+	}
+	.videointrotext {
+		width:600px;
+		top:0vh;
+	}
+	.productvideo {
+		width:30vw;
+		height:40vh;
+		top:0vh;
+	}
+	.fom { /*Find out more box, NOW TO "Our Presentation"*/
+		border-radius:40px;
+		width:500px;
+		height:80px;
+		line-height: 80px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:45px;
+	}
+	.vog {
+		border-radius:40px;
+		width:450px;
+		height:80px;
+		line-height: 80px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:45px;
+	}
+}	
+@media only screen and (max-width: 2600px) { /*Large monitors*/
+	:root {
+	--navbarheight: 24px;
+	--navbarrightpadding: var(--navbarheight) 16px;
+	}
+	.logo {
+		width: 50px;
+		height:auto;
+	}
+	li a.navtabsleft {
+		/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+		padding: var(--navbarheight) 5px;
+	}
+	.nameRGB {	
+		font-size: 40px;
+		padding: var(--navbarheight) 7px;
+		display:inline;
+	}
+	.abanimation {
+		right:3.5vw;
+		font-size: 40px;	
+	}
+	.proanimation {
+		right:3.5vw;
+		font-size: 40px;
+	}
+	.resumeanimation {
+		right:3.5vw;
+		font-size: 40px;
+	}
+	.profilepic {
+		width:auto;
+		height:auto;
+		top: 19vh;
+		float:left;
+		left:37.5%;
+	}
+	.picsize {
+		width:20vw;
+		height:auto;
+	}
+	.intro {
+		top:9.5vh;
+	}
+	h1 {
+		position:relative;
+		font-size: 85px;
+		top:1vh;
+	}
+	h2 {
+		font-size: 70px;
+	}
+	.oval { /*Contact me Button*/
+		font-size: 40px;
+		width: 280px;
+		height: 75px;
+		line-height:75px;
+	}
+	.footerbox:nth-child(1) {
+		width:13vw;
+		height:5vh;
+	}
+	.credit {
+		font-size:25px;
+		left:10%;
+		bottom:1vh;
+		line-height:3vh;
+	}
+	.swirlcontain {
+		position:relative;
+		top:5vh;
+		left:-1vw;
+		z-index:1;
+	}
+	.fptitle { 
+		font-size:80px;
+	}
+	.showcasecontainer {
+		padding: 2% 16%;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		margin: 3% 5%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		height: 320px;
+		width: 500px;
+	}
+	.projectheading {
+		position:absolute;
+		top:20%;
+		font-size:60px;
+	}
+	.fillerdes {
+		font-size: 35px;
+		/*margin-top: 1vh;*/
+	}
+	.linkhubdes {
+		font-size:20px;
+	}
+	.CP4U {
+		background-size: 500px auto;
+	}
+	.CP4U {
+		background-size: 500px auto;
+	}
+	/* The Close Button */
+	.close {
+		position:relative;
+		color: #aaaaaa;
+		float: right;
+		right:0.5%;
+		font-size: 40px;
+		top:0%;
+		font-weight: bold;
+	}
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		font-size: 68px;
+	} 
+	.modal-content {
+		margin: 2.5% auto; /* 15% from the top and centered */
+		padding: 20px;
+		padding-bottom:5%; /*Adds some borders to the last element, so the modal looks more modern*/
+		border: 1px solid #888;
+		width: 80%; 
+		min-height:125vh;
+		border-radius:40px;
+	}
+	.fence {
+		width:3px;
+		height:115vh;
+		left:40vw;
+		top:15vh;
+		background-color:black;
+	}
+	.modalsubheadings {
+		position:relative;
+		left:1%;
+		font-size: 46px;
+		font-weight:bold;
+	}
+	.modal1text {
+		position:relative;
+		left:1%;
+		font-size:40px;
+		top:-2%;
+	}
+	.modalright {
+		width: 0px;
+		right:35vw;
+		top:10vh;
+	}
+	.videointrotext {
+		width:600px;
+		top:0vh;
+	}
+	.productvideo {
+		width:30vw;
+		height:40vh;
+		top:0vh;
+	}
+	.fom { /*Find out more box, NOW TO "Our Presentation"*/
+		border-radius:40px;
+		width:500px;
+		height:80px;
+		line-height: 80px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:45px;
+	}
+	.vog {
+		border-radius:40px;
+		width:450px;
+		height:80px;
+		line-height: 80px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:45px;
+	}
+}	
+@media only screen and (max-width: 2440px) {
+	.credit {
+		font-size:25px;
+		left:10%;
+		bottom:1vh;
+		line-height:3vh;
+	}
+	.showcasecontainer {
+		padding: 2% 13%;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		margin: 3% 5%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		height: 320px;
+		width: 500px;
+	}
+}
+@media only screen and (max-width: 2160px) {
+	.credit {
+		font-size:25px;
+		left:10%;
+		bottom:1vh;
+		line-height:3vh;
+	}
+	.showcasecontainer {
+		padding: 2% 10%;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		margin: 3% 5%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		height: 320px;
+		width: 500px;
+	}
+}
+@media only screen and (max-width: 2000px) {
+	:root {
+	--navbarheight: 14px;
+	--navbarrightpadding: var(--navbarheight) 16px;
+	}
+	li a.navtabsleft {
+		font-size: 30px; /*Doesn't do anything, go to nameRGB*/
+		/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+		padding: var(--navbarheight) 5px;
+	}
+	.logo {
+		width: 40px;
+		height:auto;
+	}
+	.nameRGB {	
+		font-size: 30px;
+		padding: var(--navbarheight) 5px;
+		display:inline;
+	}
+	.abanimation {
+		right:3.5vw;
+		font-size: 30px;
+	}
+	.proanimation {
+		right:3.5vw;
+		font-size: 30px;
+	}
+	.resumeanimation {
+		right:3.5vw;
+		font-size: 30px;
+	}
+	.profilepic {
+		top: 19vh;
+		float:left;
+		left:37.5%;
+	}
+	.picsize {
+		height:auto;
+		width:auto;
+	}
+	h1 {
+		position:relative;
+		font-size: 70px;
+		top:1vh;
+	}
+	h2 {
+		font-size: 50px;
+	}
+	.oval { /*Contact me Button*/
+		font-size: 35px;
+		width: 240px;
+		height: 55px;
+		line-height:55px;
+	}
+	/*lines*/
+/*Top Lines*/
+	.line:nth-child(1) { /*Top Line*/
+		height: 134%;
+		top: -40vh;
+		left:13%;
+		width:10px;
+	}
+	.line:nth-child(2) {
+		height: 42.5%;
+		top: 5vh;
+		left:6%;
+		width:10px;
+	}
+	.line:nth-child(3) {
+		height: 65%;
+		top: 12vh;
+		left:8%;
+		width:10px;
+	}
+	.line:nth-child(4) {
+			height: 62%;
+			top: 30vh;
+			left:10%;
+			width:10px;
+	}
+	.line:nth-child(5) {
+			height: 80%;
+			top: 30vh;
+			left:7%;
+			width:10px;
+	}
+	.line:nth-child(6) {
+			height: 39%;
+			top: 60vh;
+			left:3%;
+			width:10px;
+	}
+	.footerbox:nth-child(1) {
+		width:10vw;
+		height:5vh;
+		left:0%;
+		border-top-right-radius: 40px;
+	}
+	.credit {
+		font-size:15px;
+		left:10%;
+		line-height:3vh;
+	}
+	.fptitle { 
+		font-size:60px;
+	}
+	.showcasecontainer {
+		padding: 2% 17.5%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		margin: 2% 2%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		height: 250px;
+		width: 400px;
+	}
+	.footerbox:nth-child(2) {
+		width: 310px;
+		height:95px;
+		right:0vw;
+		border-top-left-radius: 50px;
+	}
+	.fixedfooterlogo {
+		position:fixed;
+		bottom:1%;
+		height:35px;
+		width:auto;
+	}
+	.fixedfooterlogo.l {
+		right:190px;
+	}
+	.fixedfooterlogo.g {
+		right:120px;
+	}
+	.fixedfooterlogo.i {
+		right:50px;
+	}
+	.swirlcontain {
+		position:relative;
+		top:2vh;
+		left:-1vw;
+		z-index:1;
+	}
+	.projectheading {
+		top:20%;
+		font-size:50px;
+	}
+	.fillerdes {
+		font-size: 30px;
+	}
+	.linkhubdes {
+		font-size:20px;
+	}
+	.CP4U:nth-child(1) {
+		background-size: 400px auto;
+	}
+	.CP4U:nth-child(1):hover {
+		background-size: 400px auto;
+	}
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		font-size: 58px;
+	} 
+	.modal-content {
+		margin: 2.5% auto; /* 15% from the top and centered */
+		padding: 20px;
+		padding-bottom:0%; /*Adds some borders to the last element, so the modal looks more modern*/
+		border: 1px solid #888;
+		width: 80%; 
+		min-height:125vh;
+		border-radius:40px;
+	}
+	.fence {
+		position:absolute;
+		width:3px;
+		height:105vh;
+		left:40vw;
+		top:15vh;
+		background-color:black;
+	}
+	.modalsubheadings {
+		position:relative;
+		left:1%;
+		font-size: 38px;
+		font-weight:bold;
+	}
+
+	.modal1text {
+		position:relative;
+		left:1%;
+		font-size:30px;
+		top:-2%;
+	}
+	.modalright {
+		width: 0px;
+		right:35vw;
+		top:10vh;
+	}
+	.videointrotext {
+		width:400px;
+		top:0vh;
+	}
+	.productvideo {
+		width:30vw;
+		height:40vh;
+		top:0vh;
+	}
+	.fom { /*Find out more box, NOW TO "Our Presentation"*/
+		border-radius:40px;
+		width:300px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:30px;
+	}
+	.vog {
+		border-radius:40px;
+		width:280px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:30px;
+	}
+}
+@media only screen and (max-width: 1900px) { /*1900 or lower*/
+	.line:nth-child(1) { /*Top Line*/
+		height: 50%;
+		top: -10vh;
+		left:6%;
+		width:10px;
+		-webkit-animation: line1 2s infinite;
+		        animation: line1 2s infinite;
+	}
+	.intro { /*container*/
+		position:relative;
+		right:0%;
+		padding-right:9%;
+		width:50%;
+		top:10.5vh;
+		z-index:2;
+		-webkit-animation: introtransition 1.5s;
+		        animation: introtransition 1.5s;
+		/*text-shadow: -2.5px -2.5px 0 #EFEFEF, 2.5px -2.5px 0 #EFEFEF, -2.5px 2.5px 0 #EFEFEF, 2.5px 2.5px 0 #EFEFEF;*/ /*Makes text glow the home bg colour, therefore it will NOT be hidden in featured projects*/
+		/*text-shadow: -2.5px -2.5px 0 #FFFFFF, 2.5px -2.5px 0 #FFFFFF, -2.5px 2.5px 0 #FFFFFF, 2.5px 2.5px 0 #FFFFFF;*/
+	}
+	.cto { /*Check These Out!*/
+		bottom:25%;
+		right:0.5vw;
+		font-size: 28px;
+	}
+	.fptitle { 
+		color:white;
+		font-size:60px;
+		font-weight:bold;
+		/*Centers Text*/
+		left:0%;
+		width:100%;
+		text-align:center;
+		/*Centers Text ^^^*/
+		text-shadow: 0 0 20px #000000; 
+	}
+	.showcasecontainer {
+		padding: 2% 12%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+	  margin: 2% 2%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+	  height: 250px;
+	  width: 400px;
+	}
+	.swirlcontain {
+		position:relative;
+		top:5vh;
+		left:-1vw;
+		z-index:1;
+	}
+}
+@media only screen and (max-width: 1600px) { /*1600 or lower*/
+		.centered img {
+			position:relative;
+			top:0%;
+			-webkit-transform:translateY(0%);
+			    -ms-transform:translateY(0%);
+			        transform:translateY(0%);
+		}
+		.profilepic {
+			position: relative;
+			z-index: 2;
+			width: 20vw;
+			height:auto;
+			top: 19vh;
+			float:left;
+			left:37.5%;
+			-o-object-fit: contain;
+			   object-fit: contain;
+			border-radius:0;
+		}
+		.intro { /*container*/
+			position:relative;
+			top:10vh;
+			right:0%;
+			padding-right:5%;
+			float:right;
+			height:auto;
+			width:50%;
+			z-index:2;
+			-webkit-animation: introtransition 1.5s;
+			        animation: introtransition 1.5s;
+		}
+		.footerbox:nth-child(1) {
+			width:12vw;
+			height:5vh;
+			left:0%;
+		}
+		.cto { /*Check These Out!*/
+			bottom:25%;
+			right:0.5vw;
+			font-size: 29px;
+		}
+	/*text smaller*/
+	/*move text further right*/
+	.showcasecontainer {
+		padding: 2% 10%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+	  margin: 2% 2%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+	}
+	/*---------------------------------------------Modal--------------------------------------------------*/
+	.modal-content {
+		background-color: #fefefe;
+		margin: 2.5% auto; /* 15% from the top and centered */
+		padding: 20px;
+		padding-bottom:0%; /*Adds some borders to the last element, so the modal looks more modern*/
+		border: 1px solid #888;
+		width: 90%; 
+		min-height:125vh;
+		border-radius:40px;
+	}
+	.modalleft {
+		float: initial;
+		width:85vw;
+		/*background-color:lightblue;*/ /*Uncomment to see the container size*/
+	}
+	.fence { 	/*Inviisible for smaller devices*/
+		display:none;
+	}
+	.modalright {
+		position:relative;
+		float: initial;
+		width: 100vw;
+		height:auto;
+		right:0vw;
+		top:0vh;
+	}
+	.videointrotext {
+		font-size:45px;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:50vw;
+		left:2.5vw;
+		height:50vh;
+		padding-bottom:5vh;
+		top:0vh;
+	}
+	.modal1buttons { 
+		position:relative;
+		padding-top:10vh;
+		left:-20vw;
+		float:right;
+	}
+	.swirl {
+		width:101vw;
+		height:30vh;
+	}
+}
+@media only screen and (max-width: 1550px) { /*For Showcase boxes*/
+	.showcasecontainer {
+		padding: 2% 5%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+	  margin: 2% 2%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+	}
+}
+@media only screen and (max-width: 1400px) { /*1400 or lower*/
+	.centered img {
+		position:absolute;
+		top:55%; /*High top = Image goes down*/
+		left:0%;
+		width:100%;
+		-webkit-transform:translateY(-50%) scale(1);
+		-ms-transform:translateY(-50%) scale(1);
+		transform:translateY(-50%) scale(1);
+	}
+	.leftsideofhome {
+		position:relative;
+		left:0%;
+		height:100vh;
+		width:40%;
+	}
+	.profilepic {
+		position: relative;
+		width: 340px;
+		height:350px;
+		top: 37vh;
+		left:50%;
+		margin-left: -170px;
+		margin-top: -175px;
+		border-radius:50%;
+		-o-object-fit: contain;
+		   object-fit: contain;
+		/*1st number is the shadow on the right, 2nd number is the bottom shadow, and 3rd number is the opacity of the shadow*/
+	-webkit-box-shadow: 0 3rem 4rem -1rem rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 3rem 4rem -1rem rgba(0, 0, 0, 0.5);
+
+		-webkit-animation: imagetransition 1.5s;
+		        animation: imagetransition 1.5s;
+		overflow:hidden;
+	}
+	@-webkit-keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	@keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	/*text smaller*/
+	h1 {
+	font-size: 65px;
+	}
+	h2 {
+		font-size: 48px;
+	}
+	.intro { /*container*/
+		position:relative;
+		top:9vh;
+		right:0%;
+		padding-right:10%;
+		float:right;
+		height:auto;
+		width:50%;
+		z-index:2;
+		-webkit-animation: introtransition 1.5s;
+		        animation: introtransition 1.5s;
+	}
+	/*Lines*/
+	.line:nth-child(1) { /*Top Line*/
+		height: 90%;
+		top: -30vh;
+		left:13%;
+		width:10px;
+		-webkit-animation: line1 2s infinite;
+		        animation: line1 2s infinite;
+	}
+	.line:nth-child(2) {
+		height: 112.5%;
+		top: -30vh;
+		left:6%;
+		width:10px;
+		-webkit-animation: line1 0.75s infinite;
+		        animation: line1 0.75s infinite;
+	}
+	.line:nth-child(3) {
+		height: 110%;
+		top: -12vh;
+		left:8%;
+		width:10px;
+		-webkit-animation: line1 1s infinite;
+		        animation: line1 1s infinite;
+	}
+	/*Move lets chat pop up higher*/
+	.iwb {
+		width:10%;
+		height:auto;
+		right:34vw;
+		bottom: 690px;
+	}
+	.footerbox:nth-child(1) {
+		width:13.5vw;
+		height:5vh;
+		left:0%;
+	}
+	.cto { /*Check These Out!*/
+		bottom:25.5%;
+		right:1vw;
+		font-size: 28px;
+	}
+	/*Cave art*/
+	.Cave_art {
+	width:101vw;
+	bottom:90vh; /*Higher number = Cave art goes higher*/
+	}
+	.Cave_art:nth-child(1) {
+		display:visible;
+		left:-1%;
+	}
+	.Cave_art:nth-child(2) {
+		display:none;
+	}
+	/*footer*/
+	.showcasecontainer {
+		padding: 2% 15%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+	  margin: 2% 2%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:50vw;
+		left:2.5vw;
+		height:50vh;
+		top:0vh;
+	}
+	.modal1buttons { 
+		position:relative;
+		padding-top:10vh;
+		left:-20vw;
+		float:right;
+	}
+}
+@media only screen and (max-width: 1200px) { /*1200 or lower*/
+	.leftsideofhome {
+		position:relative;
+		left:0%;
+		height:100vh;
+		width:40%;
+	}
+	.profilepic {
+		width: 340px;
+		height:350px;
+		top: 35vh;
+		left:50%;
+		margin-left: -170px;
+		margin-top: -175px;
+	}
+	@-webkit-keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	@keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	.intro { /*container*/
+		bottom:184vh;
+		float:right;
+		width:50%;
+	}
+	.line:nth-child(1) { /*Top Line*/
+		height: 90%;
+		top: -35vh;
+		left:6%;
+		width:10px;
+		-webkit-animation: line1 2s infinite;
+		        animation: line1 2s infinite;
+	}
+	.line:nth-child(2) {
+		height: 42.5%;
+		top: 5vh;
+		left:6%;
+		width:10px;
+		-webkit-animation: line1 0.75s infinite;
+		        animation: line1 0.75s infinite;
+	}
+	.line:nth-child(3) {
+		height: 65%;
+		top: 12vh;
+		left:8%;
+		width:10px;
+		-webkit-animation: line1 1s infinite;
+		        animation: line1 1s infinite;
+	}
+	.footerbox:nth-child(1) {
+		width:15.5vw;
+		height:5vh;
+		left:0%;
+	}
+	.cto { /*Check These Out!*/
+		bottom:25.5%;
+		right:1.5vw;
+		font-size: 28px;
+	}
+	.showcasecontainer {
+		padding: 2% 10%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+	  margin: 2% 2%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:80vw;
+		left:2.5vw;
+		height:60vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+	.modal1buttons { 
+		position:relative;
+		left:2vw;
+		top:-5vh;
+		padding-bottom:5vh;
+		float:initial;
+	}
+}
+@media only screen and (max-width: 1024px) { /*1024 or lower, footer changes its design*/
+	.firstbackgroundcolour { /*The background colour for the top page*/
+		position:relative;
+		width:100vw;
+		top:0vh;
+		left:0vw;
+		min-height:115vh;
+		/*background: #EFEFEF;*/
+		background:#FFFFFF;
+	}
+	.profilepic {
+		width: 340px;
+		height:350px;
+		top: 35vh;
+		left:50%;
+		margin-left: -170px;
+		margin-top: -175px;
+	}
+	@-webkit-keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	@keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	.intro { /*container*/
+		bottom:187.5vh;
+		float:right;
+		width:50%;
+	}
+	/*Footer*/
+	.footerbox {
+		bottom:0%;
+	}
+	.footerbox:nth-child(1) {
+		display:none;
+	}
+	.credit:nth-child(1) {
+		display:none;
+	}
+/*Social media icons too squished together*/
+	.footerbox:nth-child(2) {
+		width:60px;
+		height:180px;
+		right:0vw;
+		border-top-left-radius: 50px;
+	}
+	.fixedfooterlogo.l {
+		position:fixed;
+		bottom:115px;
+		right:5px;
+	}
+	.fixedfooterlogo.g {
+		position:fixed;
+		bottom:65px;
+		right:5px;
+	}
+	.fixedfooterlogo.i {
+		position:fixed;
+		bottom:15px;
+		right:5px;
+	}
+	/*Footer containers END ^^^*/
+	.cto { /*Check These Out!*/
+		display:none; 
+	}
+	.credit2 { /*For smaller devices, not fixed*/
+		position:absolute;
+		display:inline;
+		font-size:15px;
+		left:3%;
+		z-index:999;
+		top: 25vh;
+	}
+	.showcasecontainer {
+		padding: 2% 7%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		margin: 2% 2%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:80vw;
+		left:2.5vw;
+		height:50vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+@media only screen and (max-width: 950px) { /*950 or lower, LAYOUT DRASTICALLY CHANGES AND CTO GONE*/
+	.showcasebutton { /*Otherwise the button container will move out of the showcase box*/
+		background-color:red;
+		width:0;
+		padding-bottom:22vh;
+	}
+	.firstbackgroundcolour { /*The background colour for the top page*/
+		position:relative;
+		width:100vw;
+		top:0vh;
+		left:0vw;
+		min-height:100vh;
+		/*background: #EFEFEF;*/
+		background:#FFFFFF;
+	}
+	.leftsideofhome {
+		position:relative;
+		left:0%;
+		height:50vh;
+		width:100%;
+		top:0vh; /*Must = Height of firstbackgroundcolour*/
+		float:initial;
+	}
+	.profilepic {
+		width: 280px;
+		height:290px;
+		top: 37vh;
+		margin-left: -140px; /*Half of width*/
+		margin-top: -145px; /*Half of height*/
+	}
+	@-webkit-keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	@keyframes imagetransition{
+		from {left:-500%; opacity:0;}
+		to {left: 50%; opacity:1;}
+	}
+	.bottomspacer { /*Spacing between the contact me button and the bottom page*/
+		position:relative;
+		display:block;
+		background:Transparent;
+		height:20vh;
+		width:100vw;
+		z-index:-999;
+	}
+	.intro { /*container*/
+		position:relative;
+		top:0vh;  /*Must = Height of firstbackgroundcolour*/
+		right:0%;
+		float:initial;
+		left:0%;
+		padding:5%;
+		height:auto;
+		width:90%;
+		-webkit-animation: introtransition 1.5s;
+		        animation: introtransition 1.5s;
+	}
+	.oval { /*Contact me Button*/
+		text-align: center;
+		font-size: 32.5px;
+		width: 210px;
+		top:95%;
+		left:5%;
+		height: auto;
+		border-radius: 40px;
+	}
+	/*Chat bubbles*/
+	.iwb {
+		width:10%;
+		height:auto;
+		right:-30vw;
+		bottom: 860px;
+	}
+	.linkedinhover {
+		height:auto;
+		left:55vw;
+		bottom:85vh;
+	}
+	.githubhover {
+		height:auto;
+		left:55vw;
+		bottom:85vh;
+	}
+	.instagramhover {
+		height:auto;
+		left:55vw;
+		bottom:85vh;
+	}
+	/*End of Chat bubbles ^^^ */
+	.line:nth-child(1) { /*The reflection of 3*/
+		height: 70%;
+		top: -35.5vh;
+		left:10%;
+		width:10px;
+		-webkit-animation: line1 2s infinite;
+		        animation: line1 2s infinite;
+	}
+	.line:nth-child(2) { /*The reflection of 4*/
+		height: 52.5%;
+		top: -10vh;
+		left:6%;
+		width:10px;
+		-webkit-animation: line1 0.75s infinite;
+		        animation: line1 0.75s infinite;
+	}
+	.line:nth-child(3) { /*The reflection of 1*/
+		height: 70%;
+		top: -35.5vh;
+		left:90%;
+		width:10px;
+		-webkit-animation: line1 1s infinite;
+		        animation: line1 1s infinite;
+		-webkit-transform: rotate(50deg);
+		    -ms-transform: rotate(50deg);
+		        transform: rotate(50deg);
+	}
+	.line:nth-child(4) { /*The reflection of 2*/
+			height: 52.5%;
+			top: -10vh;
+			left:94%;
+			width:10px;
+			-webkit-animation: line1 1s infinite;
+			        animation: line1 1s infinite;
+			-webkit-transform: rotate(50deg);
+			    -ms-transform: rotate(50deg);
+			        transform: rotate(50deg);
+	}
+	.line:nth-child(5) { /*The reflection of 6*/
+			height: 45%;
+			top: 10vh;
+			left:7%;
+			width:10px;
+			-webkit-animation: line1 1s infinite;
+			        animation: line1 1s infinite;
+	}
+	.line:nth-child(6) { /*The reflection of 5*/
+			height: 45%;
+			top: 10vh;
+			left:93%;
+			width:10px;
+			-webkit-animation: line1 0.5s infinite;
+			        animation: line1 0.5s infinite;
+			-webkit-transform: rotate(50deg);
+			    -ms-transform: rotate(50deg);
+			        transform: rotate(50deg);
+	}
+	.Cave_art {
+		width:101vw;
+		bottom:91vh; /*Higher number = Cave art goes higher*/
+	}
+	.bottom {
+		position:relative;
+		height:100%;
+		width:100%;
+		background:#1b1b1b;
+	}
+	.featured {
+		top:12.5vh;
+	}
+	.showcasecontainer {
+		position:relative;
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: auto auto auto;
+		grid-template-columns: auto auto auto;
+		margin-top:15%;
+		padding: 10% 50%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.rounded-box { /*Centers the boxes*/
+		position: relative;
+		height: 250px;
+		width: 400px;
+		margin: 40% 0%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		border-radius: 50px;
+		margin-left: -200px; /*Half of width*/
+		margin-top: -125px; /*Half of height*/
+	} 
+	.swirlcontain {
+		position:relative;
+		top:-15vh;
+		left:-1vw;
+	}
+	.credit2 { /*For smaller devices, not fixed*/
+		position:absolute;
+		display:inline;
+		font-size:15px;
+		left:3%;
+		z-index:999;
+		top: 25vh;
+	}
+	.swirl {
+		height:30vh;
+		width:101vw;
+	}
+		/* The Close Button */
+	.close {
+		position:relative;
+		color: #aaaaaa;
+		float: right;
+		right:0.5%;
+		font-size: 45px;
+		top:0%;
+		font-weight: bold;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:80vw;
+		left:2.5vw;
+		height:50vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+@media only screen and (max-width: 768px) { /*768 or lower*/
+	.profilepic {
+		width: 280px;
+		height:290px;
+		top: 35vh;
+		margin-left: -140px; /*Half of width*/
+		margin-top: -145px; /*Half of height*/
+	}
+	/*Chat bubbles, chat bubbles will not appear for devices smaller than 768px*/
+	.iwb {
+		display:none;
+	}
+	.linkedinhover {
+		display:none;
+	}
+	.githubhover {
+		display:none;
+	}
+	.instagramhover {
+		display:none;
+	}
+	/*End of Chat bubbles ^^^ */
+	.line:nth-child(1) { /*The reflection of 3*/
+		height: 50%;
+		top: -20vh;
+		left:13%;
+		width:10px;
+	}
+	.line:nth-child(3) { /*The reflection of 1*/
+		height: 50%;
+		top: -20vh;
+		left:87%;
+		width:10px;
+	}
+	.line:nth-child(2) { /*The reflection of 4*/
+		height: 27.5%;
+		top: 2.5vh;
+		left:6%;
+		width:10px;
+		-webkit-animation: line1 0.75s infinite;
+		        animation: line1 0.75s infinite;
+	}
+	.line:nth-child(4) { /*The reflection of 2*/
+		height: 27.5%;
+		top: 2.5vh;
+		left:94%;
+		width:10px;
+		-webkit-animation: line1 0.75s infinite;
+		        animation: line1 0.75s infinite;
+		-webkit-transform: rotate(50deg);
+		    -ms-transform: rotate(50deg);
+		        transform: rotate(50deg);
+	}
+	.line:nth-child(5) { /*The reflection of 6*/
+			height: 35%;
+			top: 12vh;
+			left:7%;
+			width:10px;
+			-webkit-animation: line1 1s infinite;
+			        animation: line1 1s infinite;
+	}
+	.line:nth-child(6) { /*The reflection of 5*/
+			height: 35%;
+			top: 12vh;
+			left:93%;
+			width:10px;
+			-webkit-animation: line1 0.5s infinite;
+			        animation: line1 0.5s infinite;
+			-webkit-transform: rotate(50deg);
+			    -ms-transform: rotate(50deg);
+			        transform: rotate(50deg);
+	}
+	.featured {
+		width:100%;
+		top:10vh;
+		left:0vw;
+		height:15%;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:80vw;
+		left:2.5vw;
+		height:40vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+@media only screen and (max-width: 640px) { /*640 or lower, phones*/
+	.profilepic {
+		width: 280px;
+		height:290px;
+		top: 35vh;
+		margin-left: -140px; /*Half of width*/
+		margin-top: -145px; /*Half of height*/
+	}
+	.bottomspacer { /*Spacing between the contact me button and the bottom page*/
+		position:relative;
+		display:block;
+		background:Transparent;
+		height:15vh;
+		width:100vw;
+		z-index:-999;
+	}
+	.line:nth-child(1) { /*The reflection of 3*/
+		height: 45%;
+		top: -17.5vh;
+		left:13%;
+		width:10px;
+		-webkit-animation: line1 2s infinite;
+		        animation: line1 2s infinite;
+	}
+	.line:nth-child(2) { /*The reflection of 4*/
+		height: 21%;
+		top: 10vh;
+		left:6%;
+		width:10px;
+		-webkit-animation: line1 0.75s infinite;
+		        animation: line1 0.75s infinite;
+	}
+	.line:nth-child(3) { /*The reflection of 1*/
+		height: 45%;
+		top: -17.5vh;
+		left:87%;
+		width:10px;
+		-webkit-animation: line1 1s infinite;
+		        animation: line1 1s infinite;
+		-webkit-transform: rotate(50deg);
+		    -ms-transform: rotate(50deg);
+		        transform: rotate(50deg);
+	}
+	.line:nth-child(4) { /*The reflection of 2*/
+			height: 21%;
+			top: 10vh;
+			left:94%;
+			width:10px;
+			-webkit-animation: line1 1s infinite;
+			        animation: line1 1s infinite;
+			-webkit-transform: rotate(50deg);
+			    -ms-transform: rotate(50deg);
+			        transform: rotate(50deg);
+	}
+	.line:nth-child(5) { /*The reflection of 6*/
+			height: 30%;
+			top: 15vh;
+			left:7%;
+			width:10px;
+			-webkit-animation: line1 1s infinite;
+			        animation: line1 1s infinite;
+	}
+	.line:nth-child(6) { /*The reflection of 5*/
+			height: 30%;
+			top: 15vh;
+			left:93%;
+			width:10px;
+			-webkit-animation: line1 0.5s infinite;
+			        animation: line1 0.5s infinite;
+			-webkit-transform: rotate(50deg);
+			    -ms-transform: rotate(50deg);
+			        transform: rotate(50deg);
+	}
+	.featured {
+		width:100%;
+		top:10vh;
+		left:0vw;
+		height:1%;
+	}
+	.showcasecontainer {
+		margin-top:35%;
+		padding: 10% 50%;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:80vw;
+		left:2.5vw;
+		height:40vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+@media only screen and (max-width: 575px) { /*Only for "Featured Projects" and Modal contents*/
+	.featured {
+		width:100%;
+		top:10vh;
+		left:0vw;
+		height:16%;
+	}
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		font-size: 54px;
+	} 
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:80vw;
+		left:2.5vw;
+		height:35vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+	.linkhubdes {
+		font-size:16px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	:root {
+	--rnavbuttonleft: -3vw;
+	}
+	.rnavbutton { /*the menu button*/
+		top:10px;
+	}
+	.rnavbuttonon {
+		top:1vh;
+	}
+	.profilepic {
+		width: 280px;
+		height:290px;
+		top: 35vh;
+		margin-left: -140px; /*Half of width*/
+		margin-top: -145px; /*Half of height*/
+	}
+	/*Nav bar*/
+	.logo {
+		position:relative;
+		float:left;
+		left: -9vw;
+	}
+	.nameRGB {	
+		padding: var(--navbarheight) 0px;
+		left:-9vw;
+	}
+	/*End ^^^*/
+	
+	.oval { /*Contact me Button*/
+		text-align: center;
+		font-size: 32.5px;
+		width: 210px;
+		top:100%;
+		left:5%;
+		height: auto;
+		border-radius: 40px;
+	}
+	.line:nth-child(1) { /*The reflection of 3*/
+		height: 20%;
+		top: -2.5vh;
+		left:13%;
+		width:10px;
+	}
+	.line:nth-child(2) { /*The reflection of 4*/
+		height: 21%;
+		top: 7vh;
+		left:6%;
+		width:10px;
+	}
+	.line:nth-child(3) { /*The reflection of 1*/
+		height: 20%;
+		top: -2.5vh;
+		left:87%;
+		width:10px;
+	}
+	.line:nth-child(4) { /*The reflection of 2*/
+			height: 21%;
+			top: 7vh;
+			left:94%;
+			width:10px;
+	}
+	.line:nth-child(5) { /*The reflection of 6*/
+			height: 15%;
+			top: 25vh;
+			left:7%;
+			width:10px;
+	}
+	.line:nth-child(6) { /*The reflection of 5*/
+			height: 15%;
+			top: 25vh;
+			left:93%;
+			width:10px;
+	}
+	
+	.showcasecontainer {
+		margin-top:45%;
+		padding: 10% 50%;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.rounded-box {
+		position: relative;
+		height: 250px;
+		width: 360px;
+		margin: 40% 0%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		border-radius: 50px;
+		margin-left: -180px; /*Half of width*/
+		margin-top: -125px; /*Half of height*/
+	} 
+	.projectheading {
+		top:8vh;
+		font-size:40px;
+	}
+	.fillerdes {
+		font-size: 25px;
+		color:white;
+		/*top:1%;*/
+	}
+	.CarePackages4Udes {
+		font-size:25px;
+		margin-top:15px;
+	}
+	.linkhubdes {
+		font-size:20px;
+		margin-top:5px;
+	}
+	.studyhawkdes {
+		font-size:17px;
+		margin-top:0px;
+	}
+	.showcasebutton { 
+		padding-bottom:19vh;
+	}
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		font-size: 40px;
+	} 
+	.videointrotext {
+		position:relative;
+		width:400px;
+		top:0vh;
+		font-size:40px;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:80vw;
+		left:2.5vw;
+		height:25vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+@media only screen and (max-width:420px) {
+	.showcasebutton { /*Otherwise the button container will move out of the showcase box*/
+		padding-bottom:22vh;
+	}
+	.profilepic {
+		width: 280px;
+		height:290px;
+		top: 35vh;
+		margin-left: -140px; /*Half of width*/
+		margin-top: -145px; /*Half of height*/
+	}
+	.showcasecontainer {
+		margin-top:45%;
+		padding: 10% 50%;
+		grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		height: 250px;
+		width: 330px;
+		margin: 48% 0%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		border-radius: 50px;
+		margin-left: -165px; /*Half of width*/
+		margin-top: -125px; /*Half of height*/
+	} 
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		padding-top:3vh;
+		font-size: 37px;
+	} 
+	.swirl {
+		height:40vh;
+		width:101vw;
+	}
+	.credit2 { /*For smaller devices, not fixed*/
+		display:inline;
+		font-size:15px;
+		left:4%;
+		z-index:999;
+		top: 34vh;
+	}
+	.modalsubheadings {
+		position:relative;
+		left:1%;
+		font-size: 35px;
+		font-weight:bold;
+	}
+
+	.modal1text {
+		position:relative;
+		left:1%;
+		font-size:30px;
+		top:-2%;
+	}
+	.modalright {
+		position:relative;
+		width: 0px;
+		left:-2vw;
+	}
+	.fom { /*Find out more box, NOW TO "Our Presentation"*/
+		width:300px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:25px;
+	}
+	.vog {
+		width:265px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:25px;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:85vw;
+		left:4vw;
+		height:33vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.profilepic {
+		width: 250px;
+		height:260px;
+		top: 30vh;
+		left:50%;
+		margin-left: -125px;
+		margin-top: -130px;
+	}
+	.intro {
+		top:-10vh;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	.bottomspacer { /*Spacing between the contact me button and the bottom page*/
+		height:7vh;
+		width:100vw;
+	}
+	.projectheading {
+		top:30%;
+		font-size:35px;
+	}
+	.fillerdes {
+		position:relative;
+		font-size: 25px;
+		/*bottom:110%;*/
+	}
+	.linkhubdes {
+		font-size:16px;
+	}
+	.showcasecontainer {
+		margin-top:45%;
+		padding: 10% 50%;
+		grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		height: 230px;
+		width: 310px;
+		margin: 48% 0%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		border-radius: 50px;
+		margin-left: -155px; /*Half of width*/
+		margin-top: -115px; /*Half of height*/
+	}
+	.modal1text {
+		left:1%;
+		font-size:25px;
+		top:-2%;
+	}	
+}
+/*Specific mobile devices*/
+@media only screen and (device-width: 375px) and (device-height: 667px) { /*iPhone 6/7/8*/
+	.showcasebutton { /*Otherwise the button container will move out of the showcase box*/
+		padding-bottom:24vh;
+	}
+	.profilepic {
+		top:45vh;
+	}
+	.intro {
+		top:10vh;
+	}
+	h1 {font-size:55px;}
+	h2 {
+		font-size:45px;
+	}
+	.bottomspacer {
+		height:30vh;
+	}
+	.showcasecontainer {
+		margin-top:55%; /*Pushes the modal boxes down, away from "Featured Projects"*/
+		margin-bottom:-15vh; /*Pushes the swirl up*/
+	}
+	.swirl {
+		height:50vh;
+		width:101vw;
+	}
+	.credit2 { /*For smaller devices, not fixed*/
+		display:inline;
+		font-size:15px;
+		left:4%;
+		z-index:999;
+		top: 43vh;
+	}
+	.projectheading {
+		top:10vh;
+		font-size:40px;
+	}
+}
+@media only screen and (device-width: 414px) and (device-height: 736px) { /*iPhone 6/7/8 plus*/
+	/*Picture too high*/
+	.profilepic {
+		top:45vh;
+	}
+	.intro {
+		top:10vh;
+	}
+	/*Fix padding between the button*/
+	.bottomspacer {
+		height:30vh;
+	}
+	.showcasebutton { /*Otherwise the button container will move out of the showcase box*/
+		padding-bottom:22vh;
+	}
+	/*Credits too high and the Swirl is too tall*/
+	.swirl {
+		height:40vh;
+		width:101vw;
+	}
+	.credit2 { /*For smaller devices, not fixed*/
+		display:inline;
+		font-size:15px;
+		left:4%;
+		z-index:999;
+		top: 30vh;
+	}
+}
+
+/*Other mobile devices*/
+@media only screen and (max-width: 480px) and (max-height:800px) {
+	:root {
+		--navbarheight: 10px;
+		--navbarrightpadding: var(--navbarheight) 16px;
+	}
+	li a.navtabsleft {
+	/*1st number is the height of the navbar, 2nd number is the spacing between words*/
+		padding: var(--navbarheight) 5px;
+	}
+	.logo {
+		width:40px;
+	}
+	.oval {
+		font-size: 35px;
+		width: 260px;
+		height: 60px;
+		line-height:60px;
+		border-radius: 40px;
+	}
+	h2 {
+		font-size:43px;
+	}
+}
+@media only screen and (max-width:400px) and (max-height:700px)  {
+.profilepic {
+		width: 250px;
+		height:260px;
+		top: 43vh;
+		margin-left: -125px; /*Half of width*/
+		margin-top: -130px; /*Half of height*/
+	}
+	.intro {
+		top:10vh;
+	}
+	.bottomspacer {
+		height:30vh;
+	}
+	h2 {
+		font-size:42px;
+	}
+	.showcasebutton {
+		padding-bottom: 23vh;
+	}
+	.showcasecontainer {
+		margin-top:55%;
+		padding: 10% 50%;
+		grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		height: 250px;
+		width: 330px;
+		margin: 48% 0%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		border-radius: 50px;
+		margin-left: -165px; /*Half of width*/
+		margin-top: -125px; /*Half of height*/
+	} 
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		padding-top:3vh;
+		font-size: 37px;
+	} 
+	.swirl {
+		height:40vh;
+		width:101vw;
+	}
+	.credit2 { /*For smaller devices, not fixed*/
+		display:inline;
+		font-size:15px;
+		left:4%;
+		z-index:999;
+		top: 34vh;
+	}
+	.modalsubheadings {
+		position:relative;
+		left:1%;
+		font-size: 35px;
+		font-weight:bold;
+	}
+	.modal1text {
+		position:relative;
+		left:1%;
+		font-size:30px;
+		top:-2%;
+	}
+	.modalright {
+		position:relative;
+		width: 0px;
+		left:-2vw;
+	}
+	.fom { /*Find out more box, NOW TO "Our Presentation"*/
+		width:300px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:25px;
+	}
+	.vog {
+		width:265px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:25px;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:85vw;
+		left:4vw;
+		height:33vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+@media only screen and (max-width:400px) and (max-height:580px)  {
+	.profilepic {
+		width: 250px;
+		height:260px;
+		top: 47vh;
+		margin-left: -125px; /*Half of width*/
+		margin-top: -130px; /*Half of height*/
+	}
+	.intro {
+		top:13vh;
+	}
+	h1 {
+		font-size:50px;
+	}
+	h2 {
+		font-size:42px;
+	}
+	.bottomspacer {
+		height:30vh;
+	}
+	.showcasebutton {
+		padding-bottom: 27vh;
+	}
+	.showcasecontainer {
+		margin-top:58%;
+		padding: 10% 50%;
+		grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /*Without 1fr, the boxes will not move down responsively.*/
+	}
+	.rounded-box {
+		height: 250px;
+		width: 330px;
+		margin: 48% 0%; /*1st value is the vertical spacing between the boxes, 2nd is the horizontal spacing between the boxes*/
+		border-radius: 50px;
+		margin-left: -165px; /*Half of width*/
+		margin-top: -125px; /*Half of height*/
+	} 
+	.PT { /*Project Title*/
+		position:relative;
+		left:1%;
+		padding-top:3vh;
+		font-size: 37px;
+	} 
+	.swirl {
+		height:40vh;
+		width:101vw;
+	}
+	.credit2 { /*For smaller devices, not fixed*/
+		display:inline;
+		font-size:15px;
+		left:4%;
+		z-index:999;
+		top: 34vh;
+	}
+	.modalsubheadings {
+		position:relative;
+		left:1%;
+		font-size: 35px;
+		font-weight:bold;
+	}
+
+	.modal1text {
+		position:relative;
+		left:1%;
+		font-size:30px;
+		top:-2%;
+	}
+	.modalright {
+		position:relative;
+		width: 0px;
+		left:-2vw;
+	}
+	.fom { /*Find out more box, NOW TO "Our Presentation"*/
+		width:300px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:25px;
+	}
+	.vog {
+		width:265px;
+		height:50px;
+		line-height: 50px; /*This must be equal to height, so the text will be vertically centered*/
+		font-size:25px;
+	}
+	.productvideo {
+		position:relative; /*Keep this for responsive*/
+		width:85vw;
+		left:4vw;
+		height:33vh;
+		padding-bottom:0vh;
+		top:0vh;
+	}
+}
+
+
+
+/*When firstbackgroundcolour is too short*/
+@media only screen and (orientation: landscape) and (max-width:2000px) and (min-width:1401px) and (max-height:812px) {
+	.firstbackgroundcolour {
+		min-height:120vh;
+	}
+}
+@media only screen and (orientation: landscape) and (max-width:2000px) and (min-width:1401px) and (max-height:630px) {
+	.firstbackgroundcolour {
+		min-height:140vh;
+	}
+}
+@media only screen and (orientation: landscape) and (max-width:1400px) and (min-width:951px) and (max-height:700px) {
+	.firstbackgroundcolour {
+		min-height:120vh;
+	}
+}
+@media only screen and (orientation: landscape) and (max-width:1400px) and (min-width:951px) and (max-height:650px) {
+	.firstbackgroundcolour {
+		min-height:140vh;
+	}
+	.profilepic { 
+		top: 55vh;
+	}
+	.iwb {
+		bottom: 540px;
+		right:32vw;
+	}
+	/*Lines*/
+	.line:nth-child(3) {
+		height: 110%;
+		top: -5vh;
+		left:8%;
+		width:10px;
+		-webkit-animation: line1 1s infinite;
+		        animation: line1 1s infinite;
+	}
+	.line:nth-child(4) {
+		height: 62%;
+		top: 50vh;
+		left:10%;
+		width:10px;
+	}
+	.line:nth-child(5) {
+			height: 80%;
+			top: 50vh;
+			left:7%;
+			width:10px;
+	}
+	.line:nth-child(6) {
+			height: 39%;
+			top: 90vh;
+			left:3%;
+			width:10px;
+	}
+	.showcasecontainer {
+		top:20vh;
+	}
+}
