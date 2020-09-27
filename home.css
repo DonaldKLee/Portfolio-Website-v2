@@ -1,3 +1,26 @@
+
+.website_in_progress {
+	position:fixed;
+	height:100%;
+	width:100%;
+	background:white;
+	z-index:100000000000000000000000000000000000000000000000000000;
+}
+.in_progress_text {
+	width:90%;
+	margin:0 auto;
+	top:35%;
+}
+.in_progress_link {
+	color: #4169E1;
+	text-decoration:none;
+}
+
+.in_progress_link:hover {
+	color: #4169E1;
+	text-decoration:underline;
+}
+
 html {
 	height:100vh;
 	width:100vw;
