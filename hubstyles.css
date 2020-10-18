@@ -51,8 +51,9 @@ a {
 	border-radius:50%;
 	width:200px;
 	height:200px;
+	transform: scale(0.9);
 	margin:auto; /*Centers*/
-	top:50px;
+	top:40px;
 	border: 2.5px solid #FFFFFF;
 	-webkit-box-shadow: 0 0 5px #000000, 0 0 10px #000000;
 	        box-shadow: 0 0 5px #000000, 0 0 10px #000000;
@@ -62,7 +63,7 @@ a {
 	text-align:center;
 	color:white;
 	font-size:30px;
-	top: 70px;
+	top: 60px;
 	font-weight:bold;
 	margin-bottom:100px;
 }
@@ -127,7 +128,11 @@ a {
 .linkbox:nth-child(4):hover { /*Instagram*/
 	background: #000000;
 }
-.linkbox:nth-child(5) { /*Email*/
+.linkbox:nth-child(5) { /*Twitter*/
+	background-color:#1DA1F2;
+	color:white;  
+}
+.linkbox:nth-child(6) { /*Email*/
 	background-color:white;
 	color:black;  
 }
@@ -182,65 +187,87 @@ a {
 	-webkit-animation: slide5 1.4s 1;  
 	        animation: slide5 1.4s 1;
 }
+.ani6 {
+	-webkit-animation: slide6 1.4s 1;  
+	        animation: slide6 1.4s 1;
+}
 @-webkit-keyframes slide1 {
 	0% {left:-1000vh;}
 	20% {left:0;}
 }
 @keyframes slide1 {
 	0% {left:-1000vh;}
-	20% {left:0;}
+	16.7% {left:0;}
 }
 @-webkit-keyframes slide2 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:0;}
+	16.7% {left:-1000vh}
+	33.3% {left:0;}
 }
 @keyframes slide2 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:0;}
+	16.7% {left:-1000vh}
+	33.3% {left:0;}
 }
 @-webkit-keyframes slide3 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:-1000vh}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
 	60% {left:0;}
 }
 @keyframes slide3 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:-1000vh}
-	60% {left:0;}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
+	50% {left:0;}
 }
 @-webkit-keyframes slide4 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:-1000vh}
-	60% {left:-1000vh}
-	80% {left:0;}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
+	50% {left:-1000vh}
+	66.6% {left:0;}
 }
 @keyframes slide4 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:-1000vh}
-	60% {left:-1000vh}
-	80% {left:0;}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
+	50% {left:-1000vh}
+	66.6% {left:0;}
 }
 @-webkit-keyframes slide5 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:-1000vh}
-	60% {left:-1000vh}
-	80% {left:-1000vh}
-	100% {left:0;}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
+	50% {left:-1000vh}
+	66.6% {left:-1000vh}
+	83.3% {left:0;}
 }
 @keyframes slide5 {
 	0% {left:-1000vh}
-	20% {left:-1000vh}
-	40% {left:-1000vh}
-	60% {left:-1000vh}
-	80% {left:-1000vh}
-	100% {left:0;}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
+	50% {left:-1000vh}
+	66.6% {left:-1000vh}
+	83.3% {left:0;}
+}
+@-webkit-keyframes slide6 {
+	0% {left:-1000vh}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
+	50% {left:-1000vh}
+	66.6% {left:-1000vh}
+	83.3% {left:-1000vh;}
+	100%{left:0;}
+}
+@keyframes slide6 {
+	0% {left:-1000vh}
+	16.7% {left:-1000vh}
+	33.3% {left:-1000vh}
+	50% {left:-1000vh}
+	66.6% {left:-1000vh}
+	83.3% {left:-1000vh;}
+	100%{left:0;}
 }
 .credits {
 	padding-top:50px;
@@ -259,6 +286,8 @@ a {
 	        transform:scale(1.09);
 	cursor:pointer;
 }
+
+
 
 /*Responsive*/
 @media only screen and (max-width: 500px) {

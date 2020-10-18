@@ -3,6 +3,7 @@ var remove2 = document.getElementById("removeaniafter2");
 var remove3 = document.getElementById("removeaniafter3");
 var remove4 = document.getElementById("removeaniafter4");
 var remove5 = document.getElementById("removeaniafter5");
+var remove6 = document.getElementById("removeaniafter6");
 
 window.onload = setTimeout(function(){
 	remove1.classList.remove("ani1");
@@ -23,3 +24,6 @@ window.onload = setTimeout(function(){
 window.onload = setTimeout(function(){
 	remove5.classList.remove("ani5");
 }, 1500);
+window.onload = setTimeout(function(){
+	remove6.classList.remove("ani6");
+}, 1800);
