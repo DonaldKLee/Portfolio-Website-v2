@@ -46,17 +46,17 @@ a {
 .ProfilePicture {
 	position:relative;
 	background-image: url("linkhubimg/me.jpg");
-	background-position: 50% 30%; 
-	background-size: 195px;
 	border-radius:50%;
-	width:200px;
-	height:200px;
-	transform: scale(0.9);
 	margin:auto; /*Centers*/
-	top:40px;
+	top:50px;
 	border: 2.5px solid #FFFFFF;
 	-webkit-box-shadow: 0 0 5px #000000, 0 0 10px #000000;
 	        box-shadow: 0 0 5px #000000, 0 0 10px #000000;
+
+	background-position: 50% 40%;
+    background-size: 130px;
+    width: 140px;
+    height: 140px;
 }
 .name {
 	position:relative;
@@ -270,7 +270,7 @@ a {
 	100%{left:0;}
 }
 .credits {
-	padding-top:50px;
+	padding-top:25px;
 	font-size:15px;
 	color:white;
 	padding-left:20px;
